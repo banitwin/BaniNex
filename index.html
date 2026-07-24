@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BaniNex – PINN برای فرمولاسیون هوشمند دارو</title>
-    <!-- ===== FAVICON ===== -->
+    <title>BaniNex – PINN for Smart Drug Formulation</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="/favicon.ico">
-    <!-- ===== FONTS & STYLES ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
@@ -65,10 +63,7 @@
             align-items: center;
             gap: 8px;
         }
-        .theme-toggle:hover {
-            color: #38bdf8;
-            background: rgba(255,255,255,0.05);
-        }
+        .theme-toggle:hover { color: #38bdf8; background: rgba(255,255,255,0.05); }
         .theme-toggle i { font-size: 20px; }
         .theme-toggle .label { font-size: 13px; font-weight: 500; display: none; }
         @media (min-width: 768px) { .theme-toggle .label { display: inline; } }
@@ -106,17 +101,11 @@
             cursor: pointer;
         }
         .btn:hover { background: #7dd3fc; transform: scale(1.02); }
-
-        .hero-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        .hero-left { display: flex; flex-direction: column; justify-content: center; }
 
         .hero-card {
             background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border-radius: 24px;
             padding: 32px 28px;
             border: 1px solid rgba(255, 255, 255, 0.10);
@@ -127,10 +116,7 @@
             justify-content: center;
             height: 100%;
         }
-        .hero-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
+        .hero-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
         .hero-card h3 {
             font-size: 20px;
             font-weight: 700;
@@ -140,10 +126,7 @@
             align-items: center;
             gap: 10px;
         }
-        .hero-card h3 i {
-            color: #fbbf24;
-            font-size: 24px;
-        }
+        .hero-card h3 i { color: #fbbf24; font-size: 24px; }
         .hero-card .benefit-list {
             list-style: none;
             padding: 0;
@@ -158,19 +141,9 @@
             color: #e2e8f0;
             font-size: 15px;
         }
-        .hero-card .benefit-list li:last-child {
-            border-bottom: none;
-        }
-        .hero-card .benefit-list li i {
-            color: #4ade80;
-            font-size: 18px;
-            width: 24px;
-            text-align: center;
-        }
-        .hero-card .benefit-list li strong {
-            color: #ffffff;
-            font-weight: 600;
-        }
+        .hero-card .benefit-list li:last-child { border-bottom: none; }
+        .hero-card .benefit-list li i { color: #4ade80; font-size: 18px; width: 24px; text-align: center; }
+        .hero-card .benefit-list li strong { color: #ffffff; font-weight: 600; }
         .hero-card .cta-btn {
             display: inline-flex;
             align-items: center;
@@ -194,9 +167,6 @@
             transform: scale(1.02);
             box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
         }
-        .hero-card .cta-btn i {
-            font-size: 16px;
-        }
         .hero-card .notice {
             font-size: 12px;
             color: #94a3b8;
@@ -205,10 +175,9 @@
             letter-spacing: 0.3px;
         }
 
-        /* ===== بخش‌های اصلی ===== */
+        /* ===== PROBLEM & SOLUTION ===== */
         .section-title { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
         .section-sub { color: #475569; font-size: 18px; margin-bottom: 40px; }
-
         .problem-solution { padding: 64px 0; background: #ffffff; transition: background 0.3s; }
         .ps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .ps-card { background: #f1f5f9; border-radius: 20px; padding: 32px; transition: 0.2s, background 0.3s; border-left: 6px solid #ef4444; }
@@ -218,8 +187,9 @@
         .ps-card p, .ps-card li { color: #1e293b; font-size: 16px; }
         .ps-card ul { list-style: none; padding: 0; margin-top: 12px; }
         .ps-card ul li { padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
-        .ps-card ul li i { margin-left: 12px; color: #22c55e; width: 20px; }
+        .ps-card ul li i { margin-right: 12px; color: #22c55e; width: 20px; }
 
+        /* ===== FEATURES ===== */
         .features { padding: 64px 0; background: #f8fafc; transition: background 0.3s; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; margin-top: 16px; }
         .feature-item { background: #fff; padding: 28px 24px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border: 1px solid #e9edf2; transition: 0.2s, background 0.3s, border-color 0.3s; }
@@ -241,7 +211,7 @@
             flex-wrap: wrap;
             gap: 16px;
         }
-        .footer-left { text-align: right; }
+        .footer-left { text-align: left; }
         .footer-right { display: flex; align-items: center; }
         .linkedin-footer-link {
             display: inline-flex;
@@ -269,7 +239,6 @@
             .hero-grid { grid-template-columns: 1fr; gap: 32px; }
             .hero h1 { font-size: 28px; }
             .hero-card { padding: 24px 20px; height: auto; }
-            .hero-card .cta-btn { width: 100%; }
             .section-title { font-size: 26px; }
             .features-grid { grid-template-columns: 1fr; }
             .market-items { flex-direction: column; align-items: center; }
@@ -293,41 +262,42 @@
         <div class="logo"><i class="fas fa-flask"></i> BaniNex</div>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
             <i class="fas fa-sun"></i>
-            <span class="label">روشن</span>
+            <span class="label">Light</span>
         </button>
     </div>
     <div class="nav-links">
-        <a href="index.html" class="active">خانه</a>
-        <a href="simulator.html">مطالعه موردی</a>
-        <a href="contact.html">تماس</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="simulator.html">Case Study</a>
+        <a href="team.html">About Me</a>
+        <a href="contact.html">Contact</a>
     </div>
 </nav>
 
 <!-- ===== HERO ===== -->
 <header class="hero">
     <div class="container">
-        <div class="tagline"><i class="fas fa-microchip"></i> Physics-Informed Neural Networks (PINN) برای علوم دارویی</div>
+        <div class="tagline"><i class="fas fa-microchip"></i> Physics-Informed Neural Networks (PINN) for Pharmaceutical Sciences</div>
         <div class="hero-grid">
             <div class="hero-left">
-                <h1>فرمولاسیون هوشمند دارو با <span>PINN</span></h1>
-                <p>سامانه‌ای مبتنی بر PINN که فرآیند فرمولاسیون داروهای آهسته‌رهش را متحول می‌کند: از شبیه‌سازی تا بهینه‌سازی پیوسته.</p>
+                <h1>Smart Drug Formulation with <span>PINN</span></h1>
+                <p>A PINN-based system that revolutionizes sustained-release drug formulation: from simulation to continuous optimization.</p>
                 <div>
-                    <a href="simulator.html" class="btn"><i class="fas fa-play"></i> شبیه‌ساز را ببینید</a>
+                    <a href="simulator.html" class="btn"><i class="fas fa-play"></i> Explore the Simulator</a>
                 </div>
             </div>
             <div class="hero-card">
-                <h3><i class="fas fa-bolt"></i> چرا BaniNex؟</h3>
+                <h3><i class="fas fa-bolt"></i> Why BaniNex?</h3>
                 <ul class="benefit-list">
-                    <li><i class="fas fa-check-circle"></i> فرموله‌سازی <strong>۳ داروی آهسته‌رهش</strong> ماهانه</li>
-                    <li><i class="fas fa-check-circle"></i> کاهش <strong>تا ۸۰٪</strong> زمان و هزینه توسعه</li>
-                    <li><i class="fas fa-check-circle"></i> شبیه‌سازی چالش‌های <strong>محیط‌های پیچیده</strong> بدن</li>
-                    <li><i class="fas fa-check-circle"></i> بهینه‌سازی حلقه‌بسته با داده‌های آزمایشگاهی</li>
+                    <li><i class="fas fa-check-circle"></i> Formulated <strong>3 sustained-release</strong> monthly drugs</li>
+                    <li><i class="fas fa-check-circle"></i> Reduces development time & cost by <strong>up to 80%</strong></li>
+                    <li><i class="fas fa-check-circle"></i> Simulates <strong>complex biological</strong> environments</li>
+                    <li><i class="fas fa-check-circle"></i> Closed-loop optimization with lab data</li>
                 </ul>
                 <a href="contact.html" class="cta-btn">
-                    <i class="fas fa-calendar-check"></i> درخواست همکاری
+                    <i class="fas fa-calendar-check"></i> Request Collaboration
                 </a>
                 <div class="notice">
-                    <i class="fas fa-clock"></i> پاسخگویی ظرف ۲۴ ساعت
+                    <i class="fas fa-clock"></i> Response within 24 hours
                 </div>
             </div>
         </div>
@@ -338,26 +308,26 @@
 <section class="problem-solution">
     <div class="container">
         <div style="text-align:center; margin-bottom:32px;">
-            <h2 class="section-title">چالش و راه‌حل ما</h2>
-            <p class="section-sub">چرا روش‌های سنتی پاسخگو نیستند و PINN چگونه مسیر را تغییر می‌دهد</p>
+            <h2 class="section-title">The Challenge & Our Answer</h2>
+            <p class="section-sub">Why traditional methods fall short — and how PINN transforms formulation</p>
         </div>
         <div class="ps-grid">
             <div class="ps-card">
-                <h3><i class="fas fa-exclamation-triangle" style="color:#ef4444;"></i> چالش فرمولاسیون سنتی</h3>
-                <p>توسعه داروهای آهسته‌رهش به دلیل پیچیدگی محیط‌های بیولوژیکی (مانند مفصل زانو)، فرآیندی پرخطا، زمان‌بر و هزینه‌بر است. روش‌های معمولی از پیش‌بینی رفتار بلندمدت دارو ناتوانند.</p>
+                <h3><i class="fas fa-exclamation-triangle" style="color:#ef4444;"></i> Traditional Formulation Challenge</h3>
+                <p>Developing sustained-release drugs is costly and time-consuming due to complex biological environments (e.g., knee joint). Conventional methods cannot predict long-term behavior.</p>
                 <ul>
-                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> آزمایش‌های پرهزینه و کند</li>
-                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> عدم پیش‌بینی چالش‌های محیطی</li>
-                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> دشواری در ایجاد فرمولاسیون پایدار</li>
+                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Expensive & slow trial-and-error</li>
+                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> No prediction of environmental challenges</li>
+                    <li><i class="fas fa-times-circle" style="color:#ef4444;"></i> Difficulty achieving stable formulation</li>
                 </ul>
             </div>
             <div class="ps-card solution">
-                <h3><i class="fas fa-lightbulb" style="color:#22c55e;"></i> راه‌حل BaniNex</h3>
-                <p>یک <strong>دوقلوی دیجیتال خودیادگیر</strong> که با استفاده از شبکه‌های عصبی مبتنی بر فیزیک (PINN)، فرمولاسیون را در شرایط واقعی شبیه‌سازی می‌کند. این سیستم نه تنها فرمولاسیون اولیه را می‌یابد، بلکه با دریافت نتایج آزمایشگاهی، آن را بهینه می‌کند.</p>
+                <h3><i class="fas fa-lightbulb" style="color:#22c55e;"></i> BaniNex Solution</h3>
+                <p>A <strong>self-learning digital twin</strong> using Physics-Informed Neural Networks (PINN) to simulate formulations in real biological conditions. It finds optimal formulation and improves it with lab feedback.</p>
                 <ul>
-                    <li><i class="fas fa-check-circle"></i> شبیه‌سازی دقیق محیط‌های بیولوژیکی</li>
-                    <li><i class="fas fa-check-circle"></i> کاهش چشمگیر آزمایش‌های فیزیکی</li>
-                    <li><i class="fas fa-check-circle"></i> حلقه بازخورد آزمایشگاه به مدل</li>
+                    <li><i class="fas fa-check-circle"></i> Accurate simulation of biological environments</li>
+                    <li><i class="fas fa-check-circle"></i> Drastically reduces physical experiments</li>
+                    <li><i class="fas fa-check-circle"></i> Lab-to-model feedback loop</li>
                 </ul>
             </div>
         </div>
@@ -367,28 +337,28 @@
 <!-- ===== FOUR PILLARS ===== -->
 <section class="features" id="features">
     <div class="container">
-        <h2 class="section-title">ستون‌های چهارگانه BaniNex</h2>
-        <p class="section-sub">سامانه ما واقعاً چه کاری انجام می‌دهد</p>
+        <h2 class="section-title">Four Pillars of BaniNex</h2>
+        <p class="section-sub">What our system actually does</p>
         <div class="features-grid">
             <div class="feature-item">
                 <div class="icon"><i class="fas fa-brain"></i></div>
-                <h4>۱. شبیه‌سازی هوشمند</h4>
-                <p>مدل‌سازی دقیق فرمولاسیون و محیط هدف (مفصل، خون، بافت) با استفاده از معادلات فیزیک و داده‌های زیستی.</p>
+                <h4>1. Smart Simulation</h4>
+                <p>Accurate modeling of formulation and target environment (joint, blood, tissue) using physics equations and biological data.</p>
             </div>
             <div class="feature-item">
                 <div class="icon"><i class="fas fa-syringe"></i></div>
-                <h4>۲. فرموله‌سازی سریع</h4>
-                <p>PINN با بهینه‌سازی پارامترهایی مانند اندازه ذرات، بار سطحی و خاصیت خودترمیمی، بهترین فرمولاسیون را پیشنهاد می‌دهد.</p>
+                <h4>2. Rapid Formulation</h4>
+                <p>PINN optimizes parameters like particle size, surface charge, and self-healing to propose the best formulation.</p>
             </div>
             <div class="feature-item">
                 <div class="icon"><i class="fas fa-flask"></i></div>
-                <h4>۳. حلقه بازخورد آزمایشگاه</h4>
-                <p>نتایج آزمایش‌های واقعی به مدل برگردانده می‌شود تا خطاها شناسایی و فرمولاسیون برای دور بعد بهینه شود.</p>
+                <h4>3. Lab Feedback Loop</h4>
+                <p>Real lab results are fed back to the model to identify errors and optimize formulation for the next round.</p>
             </div>
             <div class="feature-item">
                 <div class="icon"><i class="fas fa-chart-line"></i></div>
-                <h4>۴. کاهش هزینه و زمان</h4>
-                <p>کاهش نیاز به آزمایش‌های مکرر و شکست‌های پرهزینه، سرعت ورود دارو به بازار را تا ۸۰٪ افزایش می‌دهد.</p>
+                <h4>4. Cost & Time Reduction</h4>
+                <p>Reduces repeated experiments and costly failures, accelerating time-to-market by up to 80%.</p>
             </div>
         </div>
     </div>
@@ -397,15 +367,15 @@
 <!-- ===== MARKET OPPORTUNITY ===== -->
 <section class="market-section">
     <div class="container">
-        <h2 class="section-title" style="color: #0f172a;">حوزه‌های کاربرد</h2>
+        <h2 class="section-title" style="color: #0f172a;">Application Areas</h2>
         <div class="market-items">
-            <div class="market-item"><i class="fas fa-weight"></i> داروهای چاقی و دیابت</div>
-            <div class="market-item"><i class="fas fa-bone"></i> داروهای آرتروز</div>
-            <div class="market-item"><i class="fas fa-brain"></i> داروهای اعصاب و روان</div>
-            <div class="market-item"><i class="fas fa-bolt"></i> داروهای سرطان (در حال توسعه)</div>
+            <div class="market-item"><i class="fas fa-weight"></i> Obesity & Diabetes</div>
+            <div class="market-item"><i class="fas fa-bone"></i> Osteoarthritis</div>
+            <div class="market-item"><i class="fas fa-brain"></i> Neuropsychiatric</div>
+            <div class="market-item"><i class="fas fa-bolt"></i> Oncology (in development)</div>
         </div>
         <p style="margin-top:20px; max-width:700px; margin-left:auto; margin-right:auto; color:#334155;">
-            BaniNex یک <strong>پلتفرم عمومی</strong> است که برای هر حوزه‌ای از داروسازی که نیاز به فرمولاسیون دقیق و آهسته‌رهش دارد، قابل استفاده است.
+            BaniNex is a <strong>general-purpose platform</strong> applicable to any pharmaceutical area requiring precise, sustained-release formulations.
         </p>
     </div>
 </section>
@@ -414,11 +384,11 @@
 <footer class="footer">
     <div class="container footer-container">
         <div class="footer-left">
-            <p><i class="fas fa-flask" style="color:#38bdf8;"></i> BaniNex — PINN برای فرمولاسیون هوشمند دارو</p>
-            <p style="font-size:14px; margin-top:6px;">© ۲۰۲۶ · BaniNex · تمامی حقوق محفوظ است</p>
+            <p><i class="fas fa-flask" style="color:#38bdf8;"></i> BaniNex — PINN for Smart Drug Formulation</p>
+            <p style="font-size:14px; margin-top:6px;">© 2026 · BaniNex · All rights reserved</p>
         </div>
         <div class="footer-right">
-            <a href="https://www.linkedin.com/in/farhad-kianifard/" target="_blank" rel="noopener noreferrer" class="linkedin-footer-link" aria-label="صفحه لینکدین فرهاد کیانی‌فرد">
+            <a href="https://www.linkedin.com/in/farhad-kianifard/" target="_blank" rel="noopener noreferrer" class="linkedin-footer-link" aria-label="Farhad Kianifard's LinkedIn">
                 <img src="LinkedIn_icon.svg" alt="LinkedIn" class="linkedin-footer-icon" />
             </a>
         </div>
@@ -426,9 +396,7 @@
 </footer>
 
 <script>
-    // ============================================
-    // DARK MODE TOGGLE
-    // ============================================
+    // Dark mode toggle (same as before)
     (function() {
         const toggleBtn = document.getElementById('themeToggle');
         if (!toggleBtn) return;
@@ -439,11 +407,11 @@
         if (savedTheme === 'light') {
             document.body.classList.remove('dark-mode');
             icon.className = 'fas fa-moon';
-            if (label) label.textContent = 'تاریک';
+            if (label) label.textContent = 'Dark';
         } else {
             document.body.classList.add('dark-mode');
             icon.className = 'fas fa-sun';
-            if (label) label.textContent = 'روشن';
+            if (label) label.textContent = 'Light';
             localStorage.setItem('theme', 'dark');
         }
 
@@ -451,11 +419,11 @@
             const isDark = document.body.classList.toggle('dark-mode');
             if (isDark) {
                 icon.className = 'fas fa-sun';
-                if (label) label.textContent = 'روشن';
+                if (label) label.textContent = 'Light';
                 localStorage.setItem('theme', 'dark');
             } else {
                 icon.className = 'fas fa-moon';
-                if (label) label.textContent = 'تاریک';
+                if (label) label.textContent = 'Dark';
                 localStorage.setItem('theme', 'light');
             }
         });
